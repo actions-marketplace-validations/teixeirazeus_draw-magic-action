@@ -2,7 +2,7 @@
 
 Draw Magic Card on GitHub issue.
 
-![example](./example.gif)
+![example](./example-magic.gif)
 
 It takes about 10 seconds to draw.
 
