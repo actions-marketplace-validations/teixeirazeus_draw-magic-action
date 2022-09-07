@@ -1,6 +1,6 @@
 # draw-action
 
-Draw Yu-Gi-Oh! Card on GitHub issue.
+Draw Magic Card on GitHub issue.
 
 ![example](./example.gif)
 
@@ -15,7 +15,7 @@ It takes about 10 seconds to draw.
 ## Example usage
 
 ```yaml
-name: Draw Yu-Gi-Oh! Card
+name: Draw Magic Card
 on:
   issue_comment:
     types: [created, edited]
@@ -24,8 +24,8 @@ jobs:
   draw:
     runs-on: ubuntu-latest
     steps:
-      - name: Draw Yu-Gi-Oh! Card on GitHub issue
-        uses: Doarakko/draw-action@main
+      - name: Draw Magic Card on GitHub issue
+        uses: teixeirazeus/draw-magic-action@main
         if: >-
           contains(github.event.comment.body, 'draw')
           || contains(github.event.comment.body, 'ドロー')
@@ -35,4 +35,4 @@ jobs:
 
 ## Demo
 
-Please comment "draw" to [this issue](https://github.com/Doarakko/draw-action/issues/1)!
+Please comment "draw" to [this issue](https://github.com/teixeirazeus/draw-magic-action/issues/1)!
