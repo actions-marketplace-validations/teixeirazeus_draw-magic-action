@@ -1,5 +1,5 @@
-name: "Draw Yu-Gi-Oh! Card"
-description: "Draw Yu-Gi-Oh! Card on GitHub issue."
+name: "Draw Magic Card"
+description: "Draw Magic Card on GitHub issue."
 branding:
   icon: book
   color: gray-dark

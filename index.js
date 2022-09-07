@@ -8,13 +8,13 @@ async function run() {
     const githubToken = getInput("github-token");
     const octokit = new Octokit({ auth: githubToken });
 
-    fetch("https://db.ygoprodeck.com/api/v7/randomcard.php")
+    fetch("https://api.scryfall.com/cards/random")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         const cardName = data.name;
-        const imageUrl = data.card_images[0].image_url;
+        const imageUrl = data.image_uris.png;
 
         octokit.request(
           "POST /repos/{owner}/{repo}/issues/{issue_number}/comments",

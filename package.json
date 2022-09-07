@@ -1,5 +1,5 @@
 {
-  "name": "draw-action",
+  "name": "draw-magic-action",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Doarakko/draw-action.git"
+    "url": "git+https://github.com/teixeirazeus/draw-magic-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Doarakko/draw-action/issues"
+    "url": "https://github.com/teixeirazeus/draw-magic-action/issues"
   },
-  "homepage": "https://github.com/Doarakko/draw-action#readme",
+  "homepage": "https://github.com/teixeirazeus/draw-magic-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",

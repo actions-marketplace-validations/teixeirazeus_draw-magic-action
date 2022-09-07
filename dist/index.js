@@ -24,13 +24,13 @@ async function run() {
     const githubToken = (0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)("github-token");
     const octokit = new _octokit_core__WEBPACK_IMPORTED_MODULE_3__.Octokit({ auth: githubToken });
 
-    node_fetch__WEBPACK_IMPORTED_MODULE_0___default()("https://db.ygoprodeck.com/api/v7/randomcard.php")
+    node_fetch__WEBPACK_IMPORTED_MODULE_0___default()("https://api.scryfall.com/cards/random")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         const cardName = data.name;
-        const imageUrl = data.card_images[0].image_url;
+        const imageUrl = data.image_uris.png;
 
         octokit.request(
           "POST /repos/{owner}/{repo}/issues/{issue_number}/comments",
