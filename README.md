@@ -1,4 +1,4 @@
-# draw-magic-action
+![banner](./banner.png)
 
 Draw Magic Card on GitHub issue.
 
