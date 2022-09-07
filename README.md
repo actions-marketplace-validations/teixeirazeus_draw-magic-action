@@ -1,4 +1,4 @@
-# draw-action
+# draw-magic-action
 
 Draw Magic Card on GitHub issue.
 
